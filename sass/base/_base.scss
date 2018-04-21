@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+
+  //this inherits the body's box-sizing
+  box-sizing: inherit;
+}
+
+html {
+   /*Because of accessibility we don't want to hard
+    code the font-size to 10px. If we do, it overrides
+    the browser font to 10px and people who need to
+    change the default font-size can't change it. So
+    we want to use percentages as default so it can
+    scale accordingly. */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+/*
+BOX MODEL
+width
+height
+padding
+border
+margin
+
+*/
