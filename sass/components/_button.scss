@@ -1,0 +1,24 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    border-radius: .2rem;
+    position: relative;
+    font-size: 1.4rem;
+
+  }
+
+    &--accent {
+      background-color: $color-accent;
+      color: $color-white;
+
+      transition: all .3s;
+    }
+
+    &:hover {
+      background-color: darken($color-accent, 10%);
+    }
+}

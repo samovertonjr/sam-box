@@ -1,0 +1,32 @@
+// Header has it's own layout
+
+.header {
+  height: 100vh;
+  background: linear-gradient(
+              to bottom,
+              rgba($color-primary-light, 0.8),
+              rgba($color-primary-dark, 1)),
+              url("../img/super-man-hero.jpg")
+              top;
+  background-size: cover;
+  position: relative;
+
+  &__logo {
+    height: 2rem;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+} //end .header
