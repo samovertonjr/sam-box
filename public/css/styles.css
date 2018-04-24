@@ -30,7 +30,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: #FFFFF3; }
+  color: #777; }
 
 .heading-primary {
   color: #FFFFF3;
@@ -44,6 +44,9 @@ body {
   .heading-primary--sub {
     font-size: 1.6rem;
     font-weight: 300; }
+
+.text-center {
+  text-align: center; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -62,13 +65,27 @@ body {
 .btn:hover {
   background-color: #846bd5; }
 
+.feature-box {
+  font-size: 1.5rem;
+  text-align: center; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right, #c6bbeb, #846bd5);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block; }
+  .feature-box__title {
+    color: #566270;
+    margin-bottom: 1rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
   /*This is an attribute selector. It selects
   all class attributes that equal "col-" in .row */ }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 6rem; }
   .row::after {
     content: "";
     display: table;
@@ -85,14 +102,14 @@ body {
   .row .col-1-of-4 {
     width: calc( (100% - 3 * 6rem) / 4); }
   .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 6rem)) / 3 + 6rem); }
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 6rem)) / 4 + 6rem); }
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 6rem)) / 4 + 2 * 6rem); }
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  height: 100vh;
+  height: 95vh;
   background: linear-gradient(to bottom, rgba(168, 196, 222, 0.8), #566270), url("../img/super-man-hero.jpg") top;
   background-size: cover;
   position: relative; }
@@ -108,3 +125,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.section-features {
+  padding: 10rem 0; }
